@@ -27,9 +27,9 @@ function Hero({ results }) {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     ></path>
                   </svg>
                   <span className="text-gray-800 font-semibold">Play</span>
@@ -43,9 +43,9 @@ function Hero({ results }) {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     ></path>
                   </svg>
@@ -57,7 +57,7 @@ function Hero({ results }) {
         </div>
         <div className="absolute w-full h-64 bottom-0 bg-gradient-to-t from-black"></div>
         <div className="w-full h-64 lg:h-screen object-cover -mt-5">
-          <Image
+          <Image alt=""
             src={
               `${BASE_URL}${results.backdrop_path || results.poster_path}` ||
               `${BASE_URL}${results.poster_path}`
